@@ -53,4 +53,16 @@ if (typeOfCar.toLowerCase() === 'yes' || typeOfCar.toLowerCase() === 'y' || type
   alert('Wrong, I do drive a red Fiat 500 Sport!');
 }
 
-alert('Congratulations! You finished, and your final score is ' + score + ' out of 5!');
+var numberOfCities = parseInt(prompt('How many cities have I lived in? Guess a number from 1-10!'));
+console.log('numberOfCities user answer: ' + numberOfCities);
+
+if (numberOfCities === 4) {
+  alert('Correct! I have lived in Eugene, Seattle, Boise, and Los Angeles');
+  score += 1;
+} else if (numberOfCities < 4) {
+  alert('Not quite, you guessed too low!');
+} else {
+  alert('Not quite, you guessed too high!');
+}
+
+alert('Congratulations! You finished, and your final score is ' + score + ' out of 6!');
