@@ -30,3 +30,12 @@ To create this code, I used the help of textbook Javascript & JQuery by Jon Duck
 Author:
 
 Miranda Raymond
+
+----------------------------------
+A little joke....
+
+What do stoners and prime numbers have in common?
+
+The higher they are, the more spaced out they get.
+
+source: reddit.
