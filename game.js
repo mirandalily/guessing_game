@@ -43,4 +43,14 @@ if (numberOfPets === 4) {
   alert('Not quite, you guessed too high!');
 }
 
-alert('Congratulations! You finished, and your final score is ' + score + ' out of 4!');
+var typeOfCar = prompt('Do I drive a red Fiat 500 Sport? YES or NO');
+console.log('typeOfCar user answer:' + typeOfCar);
+
+if (typeOfCar.toLowerCase() === 'yes' || typeOfCar.toLowerCase() === 'y' || typeOfCar.toLowerCase() === 'yes!') {
+  alert('Correct! I drive a red Fiat 500 Sport!');
+  score += 1;
+} else {
+  alert('Wrong, I do drive a red Fiat 500 Sport!');
+}
+
+alert('Congratulations! You finished, and your final score is ' + score + ' out of 5!');
