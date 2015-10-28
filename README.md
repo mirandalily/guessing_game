@@ -17,7 +17,7 @@ GIT Access:
 
 The source repository is made available via GIT, click the link to access:
 
-link
+https://github.com/mirandalily/guessing_game
 
 ----------------------------------
 
