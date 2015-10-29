@@ -1,3 +1,10 @@
+var ans1 = document.getElementById('answer1');
+var ans2 = document.getElementById('answer2');
+var ans3 = document.getElementById('answer3');
+var ans4 = document.getElementById('answer4');
+var ans5 = document.getElementById('answer5');
+var ans6 = document.getElementById('answer6');
+
 var score = 0;
 alert("Hello! Let's play a guessing game");
 
@@ -6,10 +13,10 @@ function firstQuestion() {
     console.log('birthPlace user answer: ' + birthPlace);
 
     if (birthPlace.toLowerCase() === 'yes' || birthPlace.toLowerCase() === 'y' || birthPlace.toLowerCase() ==='yes!') {
-      // alert('Correct! I was born in Eugene, Oregon!');
+      ans1.innerHTML = 'Correct! I was born in Eugene, Oregon!';
       score += 1;
     } else {
-    // alert('Wrong, I was born in Eugene, Oregon!');
+      ans1.innerHTML = 'Wrong, I was born in Eugene, Oregon!';
     }
   };
 
@@ -18,9 +25,9 @@ function secondQuestion() {
   console.log('collegeDegree user answer: ' + collegeDegree);
 
   if (collegeDegree.toLowerCase() === 'yes' || collegeDegree.toLowerCase() === 'y' || collegeDegree.toLowerCase() === 'yes!') {
-    // alert('Wrong! I earned a degree in Biology!');
+    ans2.innerHTML = 'Wrong! I earned a degree in Biology!';
   } else {
-    // alert('Correct, I earned a degree in Biology!');
+    ans2.innerHTML = 'Correct, I earned a degree in Biology!';
     score += 1;
   }
 };
@@ -30,10 +37,10 @@ function thirdQuestion() {
   console.log('favoriteAnimal user answer: ' + favoriteAnimal);
 
   if (favoriteAnimal.toLowerCase() === 'yes' || favoriteAnimal.toLowerCase() === 'y' || favoriteAnimal.toLowerCase() === 'yes!') {
-      // alert('Correct! I have always loved Elephants!');
+      ans3.innerHTML = 'Correct! I have always loved Elephants!';
       score += 1;
   } else {
-    // alert('Wrong, My favorite animal is the Elephant!');
+    ans3.innerHTML = 'Wrong, My favorite animal is the Elephant!';
   }
 };
 
@@ -42,12 +49,12 @@ function fourthQuestion() {
   console.log('numberOfPets user answer: ' + numberOfPets);
 
   if (numberOfPets === 4) {
-    // alert("Correct! I have 4 pets total: 2 dogs, and 2 cats!");
+    ans4.innerHTML = "Correct! I have 4 pets total: 2 dogs, and 2 cats!";
     score += 1;
   } else if(numberOfPets < 4) {
-    // alert('Not quite, you guessed too low!');
+    ans4.innerHTML = 'Not quite, you guessed too low!';
   } else {
-    // alert('Not quite, you guessed too high!');
+    ans4.innerHTML = 'Not quite, you guessed too high!';
   }
 };
 
@@ -56,25 +63,33 @@ function fifthQuestion() {
   console.log('typeOfCar user answer:' + typeOfCar);
 
   if (typeOfCar.toLowerCase() === 'yes' || typeOfCar.toLowerCase() === 'y' || typeOfCar.toLowerCase() === 'yes!') {
-    // alert('Correct! I drive a red Fiat 500 Sport!');
+    ans5.innerHTML = 'Correct! I drive a red Fiat 500 Sport!';
     score += 1;
   } else {
-    // alert('Wrong, I do drive a red Fiat 500 Sport!');
+    ans5.innerHTML = 'Wrong, I do drive a red Fiat 500 Sport!';
   }
 };
 
-function sixQuestion() {
+function sixthQuestion() {
   var numberOfCities = parseInt(prompt('How many cities have I lived in? Guess a number from 1-10!'));
   console.log('numberOfCities user answer: ' + numberOfCities);
 
   if (numberOfCities === 4) {
-    // alert('Correct! I have lived in Eugene, Seattle, Boise, and Los Angeles');
+    ans6.innerHTML = 'Correct! I have lived in Eugene, Seattle, Boise, and Los Angeles';
     score += 1;
   } else if (numberOfCities < 4) {
-    // alert('Not quite, you guessed too low!');
+    ans6.innerHTML = 'Not quite, you guessed too low!';
   } else {
-    // alert('Not quite, you guessed too high!');
+    ans6.innerHTML = 'Not quite, you guessed too high!';
   }
 };
+
+
+firstQuestion();
+secondQuestion();
+thirdQuestion();
+fourthQuestion();
+fifthQuestion();
+sixthQuestion();
 
 alert('Congratulations! You finished, and your final score is ' + score + ' out of 6!');
