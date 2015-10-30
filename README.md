@@ -40,8 +40,14 @@ The higher they are, the more spaced out they get.
 
 source: reddit.
 __________________________________
-
-Editor remarks (Rick):
+Paired Programming Day 1:
+Rick:
 - moved logic into functions
 - moved alerts into DOM (p id, getElementById, inner.HTML)
 - tested it and it looks great
+
+Paired Programming Day 2:
+Willie:
+-placed images with html syntax in JS
+-linked stylesheet
+-added styles to answers
