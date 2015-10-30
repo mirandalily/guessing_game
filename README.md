@@ -39,3 +39,9 @@ What do stoners and prime numbers have in common?
 The higher they are, the more spaced out they get.
 
 source: reddit.
+__________________________________
+
+Editor remarks (Rick):
+- moved logic into functions
+- moved alerts into DOM (p id, getElementById, inner.HTML)
+- tested it and it looks great
